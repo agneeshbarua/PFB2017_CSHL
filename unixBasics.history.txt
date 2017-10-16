@@ -1,0 +1,70 @@
+    3  mkdir problemsets
+    
+    5  cd problemsets/
+    6  wget sequences.nt.fa
+    8  cp ~/Desktop/files/sequences.nt.fa 
+    9  pwd
+   18  wc -l sequences.nt.fa #counts the number of lines in file  
+   19  wc -c sequences.nt.fa #counts the number of bytes
+   20  head sequences.nt.fa 
+   21  tail sequences.nt.fa 
+   
+   69  cd PFB2017_CSHL/
+   70  echo "# PFB2017_CSHL" >> README.md
+   71  git init
+   72  git add README.md
+   73  git commit -m "first commit"
+   74  git remote add origin https://github.com/agneeshbarua/PFB2017_CSHL.git
+   75  git push -u origin master
+   76  pwd
+   77  cd ..
+   78  pwd
+   79  mkdir Unix.1
+   81  mv *.txt Unix.1/
+   83  mv *.out Unix.1/
+   84  mv *.fa Unix.1/
+   86  cp -r Unix.1/ PFB2017_CSHL/
+   88  cd PFB2017_CSHL/
+   90  git add *
+   91  git commit -m "added previous problem files"
+   92  git push
+   93  cd ..
+   94  mkdir files 
+   95  pwd
+   96  cd PFB2017_CSHL/
+   97  git add /Users/admin/problemsets/Unix.1/sequences.nt.fa
+   98  cd ..
+   99  git add /Users/admin/problemsets/Unix.1/sequences.nt.fa
+  100  git commit -m "adding seq file"
+  101  git push
+  102  pwd
+  103  cd PFB2017_CSHL/
+  111  vi mysequence.txt
+  112  git add mysequence.txt 
+  113  git commit -m "added mysequence.txt file"
+  114  git push 
+  115  ls -l
+  116  pwd
+  117  history
+  118  git status
+  119  git remote -v
+  120  ls
+  121  mv PFB2017_CSHL/ ../.
+  122  ls
+  123  mv ../PFB2017_CSHL/ .
+  124  git push 
+  125  git pull
+  126  ls
+  127  vi test.txt
+  128  git add test.txt 
+  129  git commit -m "message"
+  130  git push 
+  131  git pull
+  132  ls -l
+  133  git add mysequence.txt 
+  134  git commit -m "adding mysequences.tst"
+  135  git push
+  136  git status
+  137  git pull
+  138  pwd
+  139  history > unixBasics.history.txt
